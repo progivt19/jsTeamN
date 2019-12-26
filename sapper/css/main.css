@@ -1,0 +1,108 @@
+h1 {
+    margin: 0;
+}
+.mode-list {
+    display: flex;
+    padding: 0.5em;
+}
+.mode-btn {
+    padding: 1em 2em;
+    border: solid sandybrown 0.3em;
+    border-radius: 1em;
+    margin: 0.5em 1em;
+}
+
+/* default button style */
+.btn {
+    position: relative;
+    border: 0;
+    padding: 15px 25px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+.btn:active {
+    top: 4px;   
+}
+.btn.green{background-color: #9abf7f;}
+.btn.green {box-shadow: 0px 4px 0px #87a86f;}
+.btn.green:active {box-shadow: 0 0 #87a86f; background-color: #87a86f;}
+
+.btn.large {
+  padding: 0.8em 1.6em; 
+  font-size: 1.25em;
+}
+
+sapper {
+    display: flex;    
+}
+
+/* sapper h1 {
+    width: 100%;
+    flex-shrink: 0;
+} */
+
+field {
+    display: grid;
+}
+
+field.four-x-four {
+    grid-template-columns: repeat(4, 4em);
+}
+
+field.eight-x-eight {
+    grid-template-columns: repeat(8, 3em);
+}
+
+field.sixteen-x-sixteen {
+    grid-template-columns: repeat(16, 2em);
+}
+
+.four-x-four .point{
+    height: 4em;
+    line-height: 3.8em;
+}
+
+.eight-x-eight .point {
+    height: 3em;
+    line-height: 2.5em; 
+}
+
+.sixteen-x-sixteen .point {
+    height: 2em;
+    line-height: 1.6em; 
+}
+
+.point {
+    border: solid gray 3px;
+    text-align: center;
+    height: 3em;
+    line-height: 50px;
+    background: darkblue;
+    box-sizing: border-box;
+}
+
+.point:hover {
+    opacity: 0.7;
+}
+.point.opened {
+    background: yellowgreen;
+}
+
+.opened p {
+    display: inline;
+}
+
+p {
+    display: none;
+}
+
+.point.flag {
+    background-color: red; 
+}
+
+.timer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
